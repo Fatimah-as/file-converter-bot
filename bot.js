@@ -4,7 +4,7 @@ const path = require('path');
 const https = require('https');
 const { exec } = require('child_process');
 
-const BOT_TOKEN = '8510336265:AAHeTa6ZetgkModSo-opuCv7zst2mzQ-di4'; //التوكن حق البوت
+const BOT_TOKEN = process.env.BOT_TOKEN; //التوكن حق البوت
 const bot = new Telegraf(BOT_TOKEN);
 
 const userFiles = {};
